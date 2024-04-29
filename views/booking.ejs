@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/booking.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <h1>Booking Online Now</h1>
+        <p>Please fill out this form with the required information</p>
+        <form action="/upload" method="post" enctype="mutlipart/form-data" >
+
+            <fieldset>
+                <label>First Name
+                    <input type="text" name="firstname" required /></label>
+                <label>Last Name
+                    <input type="text" name="lastname" required />
+                </label>
+                <label>Email
+                    <input type="email" name="email" required />
+                </label>
+                <label>Phone Number
+                    <input type="text" name="phone" required />
+                </label>
+
+                Bike
+                    <select name="Bike">
+                        <option value="">(select one)</option>
+                        <option value="1">Kawasaki</option>
+                        <option value="2">Yamaha</option>
+                        <option value="3">Royal Enfield</option>
+                        <option value="4">Hero</option>
+                    </select>
+                
+                Model
+                    <select name="Models">
+                        <option value="">(select one)</option>
+                        <option value="1"> Royal Enfield Classic</option>
+                        <option value="2">MT-15</option>
+                        <option value="3">Hero</option>
+                        <option value="4">Activa 7G</option>
+                    </select>
+                
+            </fieldset>
+           
+                <label>Adress Details
+                    <textarea name="Address" rows="5" cols="30" placeholder="Your message ..."></textarea>
+                </label>
+                
+            </fieldset>
+            
+            <input type="submit" name="Payment" value="Payment" />
+        </form>
+    </body>
+</body>
+
+</html>
